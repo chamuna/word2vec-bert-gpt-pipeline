@@ -1,6 +1,8 @@
 # word2vec-bert-gpt-pipeline
 A complete pipeline for processing text using Word2Vec, BERT, and GPT, enabling word embeddings, contextual encoding, vector similarity search, and AI-generated responses. This repository combines state-of-the-art AI models to perform NLP tasks efficiently and effectively.
 
+---
+
 ## **Table of Contents**
 1. [Overview](#overview)
 2. [Features](#features)
@@ -39,30 +41,3 @@ By leveraging these models, users can:
    ```bash
    git clone https://github.com/chamuna/word2vec-bert-gpt-pipeline.git
    cd word2vec-bert-gpt-pipeline
-
-pip install -r requirements.txt
-
-python main.py
-
-What is artificial intelligence?
-How does AI impact society?
-What are the challenges of artificial intelligence?
-
-[
-    {
-        "prompt": "What is artificial intelligence?",
-        "response": "AI is a term used to describe artificial intelligence that is designed to perform complex tasks..."
-    },
-    {
-        "prompt": "How does AI impact society?",
-        "response": "AI has impacted society in automation, healthcare, and more..."
-    }
-]
-
-
-You can replace the placeholders (**`yourusername`**, **`Your Name`**, and **`your.email@example.com`**) with your actual details, and the README.md file is now ready for upload to GitHub. Let me know if there are further customizations you'd like! 😊
-
-
-
-
-
