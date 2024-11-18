@@ -37,7 +37,7 @@ By leveraging these models, users can:
 ## **Installation**
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/word2vec-bert-gpt-pipeline.git
+   git clone https://github.com/chamuna/word2vec-bert-gpt-pipeline.git
    cd word2vec-bert-gpt-pipeline
 
 
