@@ -41,3 +41,76 @@ By leveraging these models, users can:
    ```bash
    git clone https://github.com/chamuna/word2vec-bert-gpt-pipeline.git
    cd word2vec-bert-gpt-pipeline
+
+   Install the required dependencies:
+
+   bash
+
+   pip install -r requirements.txt
+   Run the main script:
+
+   bash
+
+   python main.py
+   
+## **How to Use**
+   Run the pipeline: Execute the script main.py to process text using the pipeline.
+
+   Customize prompts: Edit the prompts in main.py to test specific questions or queries.
+
+   Output location:
+
+   Results are saved in a responses.json file for further review.
+## **Examples**
+   Input Prompts
+   plaintext
+
+   What is artificial intelligence?
+   How does AI impact society?
+   What are the challenges of artificial intelligence?
+   Sample Output (responses.json)
+   json
+
+   [
+       {
+           "prompt": "What is artificial intelligence?",
+           "response": "AI is a term used to describe artificial intelligence that is designed to perform complex tasks..."
+       },
+       {
+           "prompt": "How does AI impact society?",
+           "response": "AI has impacted society in automation, healthcare, and more..."
+       }
+   ]
+## **File Structure**
+   plaintext
+
+   ├── embeddings/
+   │   ├── generate_embeddings.py      # Generates Word2Vec embeddings
+   ├── encoding/
+   │   ├── bert_encoder.py             # Encodes sentences using BERT
+   ├── retrieval/
+   │   ├── faiss_index.py              # Facilitates similarity search with FAISS
+   ├── generation/
+   │   ├── gpt_response.py             # Generates responses using GPT
+   ├── utils/
+   │   ├── config.py                   # Configuration for model and environment
+   │   ├── gpu_utils.py                # GPU-related utilities
+   ├── main.py                         # Entry point for running the pipeline
+   ├── responses.json                  # Stores AI-generated responses
+   ├── requirements.txt                # Required Python dependencies
+
+## **License**
+   This project is licensed under the MIT License. You are free to use, modify, and distribute it as per the terms of the license.
+
+   Contribution
+   Contributions are welcome! If you'd like to improve or extend the pipeline, feel free to fork the repository and submit a pull request.
+
+   Contact
+   For questions or feedback, reach out:
+   This file includes all requested sections and can be directly saved as **README.md** in your repository. Let me know if you’d like further customizations!
+
+
+
+
+
+
