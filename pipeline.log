@@ -1,0 +1,26 @@
+2025-01-17 08:40:33,961 - INFO - Generating Word2Vec embeddings...
+2025-01-17 08:40:33,961 - INFO - collecting all words and their counts
+2025-01-17 08:40:33,961 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-01-17 08:40:33,961 - INFO - collected 8 word types from a corpus of 8 raw words and 2 sentences
+2025-01-17 08:40:33,962 - INFO - Creating a fresh vocabulary
+2025-01-17 08:40:33,990 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 8 unique words (100.00% of original 8, drops 0)', 'datetime': '2025-01-17T08:40:33.962139', 'gensim': '4.3.3', 'python': '3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.22631-SP0', 'event': 'prepare_vocab'}
+2025-01-17 08:40:33,994 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 8 word corpus (100.00% of original 8, drops 0)', 'datetime': '2025-01-17T08:40:33.994564', 'gensim': '4.3.3', 'python': '3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.22631-SP0', 'event': 'prepare_vocab'}
+2025-01-17 08:40:33,995 - INFO - deleting the raw counts dictionary of 8 items
+2025-01-17 08:40:33,995 - INFO - sample=0.001 downsamples 8 most-common words
+2025-01-17 08:40:33,995 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 0.7795417527999328 word corpus (9.7%% of prior 8)', 'datetime': '2025-01-17T08:40:33.995065', 'gensim': '4.3.3', 'python': '3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.22631-SP0', 'event': 'prepare_vocab'}
+2025-01-17 08:40:33,995 - INFO - estimated required memory for 8 words and 100 dimensions: 10400 bytes
+2025-01-17 08:40:33,995 - INFO - resetting layer weights
+2025-01-17 08:40:33,995 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-01-17T08:40:33.995564', 'gensim': '4.3.3', 'python': '3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.22631-SP0', 'event': 'build_vocab'}
+2025-01-17 08:40:33,995 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 8 vocabulary and 100 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-01-17T08:40:33.995564', 'gensim': '4.3.3', 'python': '3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.22631-SP0', 'event': 'train'}
+2025-01-17 08:40:33,998 - INFO - EPOCH 0: training on 8 raw words (1 effective words) took 0.0s, 6969 effective words/s
+2025-01-17 08:40:34,001 - INFO - EPOCH 1: training on 8 raw words (0 effective words) took 0.0s, 0 effective words/s
+2025-01-17 08:40:34,002 - INFO - EPOCH 2: training on 8 raw words (1 effective words) took 0.0s, 2706 effective words/s
+2025-01-17 08:40:34,006 - INFO - EPOCH 3: training on 8 raw words (1 effective words) took 0.0s, 1751 effective words/s
+2025-01-17 08:40:34,008 - INFO - EPOCH 4: training on 8 raw words (1 effective words) took 0.0s, 13351 effective words/s
+2025-01-17 08:40:34,008 - INFO - Word2Vec lifecycle event {'msg': 'training on 40 raw words (4 effective words) took 0.0s, 294 effective words/s', 'datetime': '2025-01-17T08:40:34.008616', 'gensim': '4.3.3', 'python': '3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.22631-SP0', 'event': 'train'}
+2025-01-17 08:40:34,008 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=8, vector_size=100, alpha=0.025>', 'datetime': '2025-01-17T08:40:34.008616', 'gensim': '4.3.3', 'python': '3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]', 'platform': 'Windows-11-10.0.22631-SP0', 'event': 'created'}
+2025-01-17 08:40:34,010 - INFO - Encoding sentence with BERT...
+2025-01-17 08:40:35,188 - INFO - Creating FAISS index...
+2025-01-17 08:40:35,191 - INFO - Processing 1 prompts...
+2025-01-17 08:40:36,554 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-17 08:40:50,783 - WARNING - Some parameters are on the meta device because they were offloaded to the cpu.

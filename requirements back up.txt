@@ -1,0 +1,7 @@
+torch>=2.2.0
+transformers==4.26.1
+faiss-cpu==1.7.3
+numpy>=1.24.3
+scikit-learn==1.2.2
+gensim==4.3.1
+matplotlib==3.7.1

@@ -1,0 +1,26 @@
+{
+    "metadata": {
+        "total_time": 374.7365119457245,
+        "total_prompts": 1,
+        "gpu_device": "NVIDIA GeForce RTX 3060",
+        "timestamp": "2025-01-17 08:46:49",
+        "config": {
+            "max_threads": 16,
+            "batch_size": 4,
+            "output_file": "responses.json",
+            "log_file": "pipeline.log",
+            "model_settings": {
+                "temperature": 0.7,
+                "max_tokens": 1000
+            }
+        }
+    },
+    "responses": [
+        {
+            "prompt": "Q: What is artificial intelligence (AI)?\n            A: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines.\n            It includes techniques such as machine learning, natural language processing, and computer vision.\n            ---\n            Q: What are the main types of AI?\n            A: The main types of AI are:\n               1. Narrow AI\n               2. General AI\n               3. Super AI\n            ---\n            Q: Please provide a comprehensive explanation of artificial intelligence (AI).\n            Include the following points: ...\n            ",
+            "response": "Q: What is artificial intelligence (AI)?\n            A: Artificial Intelligence (AI) refers to the simulation of human intelligence in machines.\n            It includes techniques such as machine learning, natural language processing, and computer vision.\n            ---\n            Q: What are the main types of AI?\n            A: The main types of AI are:\n               1. Narrow AI\n               2. General AI\n               3. Super AI\n            ---\n            Q: Please provide a comprehensive explanation of artificial intelligence (AI).\n            Include the following points: ...\n            \n        \"\"\"\n        return self.get_answer(question)\n\n    def get_question(self, question_id: int) -> str:\n        question = self.questions[question_id]\n\n        if question.question_type == QuestionType.MULTIPLE_CHOICE:\n            return f\"\"\"\n            {question.question}\n            <ul>\n                <li>\n                    <p>{question.choices[0].answer}</p> \n                    \n                </li>\"\"\"\n        elif question.answer_type in [AnswerType.SHORT_ANSWER, AnswerType.ESSAY]:\n            answer = question.answers[0]\n            if answer.answer is not None and len(answer.answer) > 100: \n                answer = f\"<p style='white-space: pre-wrap;'>{answer.get('answer', '')}</p>\"\n            elif answer.get(\"answer\", \"\") == \"\":\n                return f\"{question.answer}\"\n            else:\n                \n                if answer[\"answer\"] is None or len(str(answer['answer'])) < 200 or answer['answer'].strip() == '':\n                        return f'<p>{answer[\"answer\"].replace(\"'\", \"\\\\'\")}</p>\\n'\n                else:  # if the answer is longer than 150 characters, we need to break it into multiple paragraphs\n                   return f'''\n                  <p style=\"word-wrap: break-word; word-break: keep-all;\">\n                      <span style=\"font-size: 14px; font-weight: bold;\">{answer[\"question\"]}</span",
+            "status": "success",
+            "timestamp": "2025-01-17 08:46:49"
+        }
+    ]
+}
